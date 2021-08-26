@@ -1,0 +1,161 @@
+:root {
+    --clr-primary-1: hsl(225, 100%, 94%);
+    --clr-primary-2: hsl(245, 75%, 52%);
+
+    --clr-neutral-1: hsl(225, 100%, 98%);
+    --clr-neutral-2: hsl(224, 23%, 55%);
+    --clr-neutral-3: hsl(223, 47%, 23%);
+
+    --clr-hover-main: rgb(118, 108, 241);
+
+    --font-family: 'Red Hat Display', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: var(--font-family);
+    font-size: 16px;
+    color: var(--clr-neutral-3);
+}
+
+body {
+    background-color: var(--clr-primary-1);
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    min-width: 375px;
+}
+
+.form {
+    background-color: white;
+    width: 90%;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px .3rem 1rem var(--clr-neutral-2);
+}
+
+.form > img {
+    width: 100%;
+}
+
+.contents {
+    padding: 2.5rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: var(--clr-neutral-2);
+}
+
+strong {
+    color: var(--clr-neutral-3);
+}
+
+a {
+    color: var(--clr-primary-2);
+    font-weight: 700;
+}
+
+a:hover {
+    color: var(--clr-hover-main);
+}
+
+.plan {
+    margin-top: 1rem;
+    background-color: var(--clr-neutral-1);
+    border-radius: .5rem;
+    padding: 1.5rem;
+    display: flex;
+    font-size: 14px;
+}
+
+.plan > #child_1 {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+#child_2 {
+    flex: 1 1 auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#child_3 {
+    display: flex;
+    align-items: center;
+}
+
+.plan img {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    all: unset;
+    display: block;
+    width: 100%;
+    height: 3rem;
+    border-radius: .5rem;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#submit {
+    margin-top: 2rem;
+    background-color: var(--clr-primary-2);
+    color: white;
+    box-shadow: 0px 1rem 1rem var(--clr-primary-1);
+}
+
+#submit:hover {
+    background-color: var(--clr-hover-main);
+}
+
+#cancel {
+    margin-top: 1rem;
+    color: var(--clr-neutral-2);
+}
+
+#cancel:hover {
+    color: var(--clr-neutral-3);
+}
+
+@media (min-width: 576px) { 
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+    }
+
+    .form {
+        width: 60%;
+    }
+}
+
+@media (min-width: 992px) {
+    .form {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .form {
+        width: 33%;
+    }
+}

@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [](https://xs30snw.github.io/FEM_order-summary-component/)
+- Live Site URL: [GitHub Pages](https://xs30snw.github.io/FEM_order-summary-component/)
 
 ## My process
 
